@@ -2,7 +2,8 @@
 
 ## Iniciar el proyecto
 
-- Abrir el Projecto y en la terminal escribir: nodemon app
+- Al abrir por primera vez el proyecto hay que abrir una nueva terminal y escribir el comando: npm intall
+- Abrir una terminal con bash y escribir: nodemon app
 - Esto abrirá la pagina en http://127.0.0.1:1337/
 
 ## Descargas
