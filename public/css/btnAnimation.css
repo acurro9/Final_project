@@ -1,0 +1,129 @@
+:root {
+  --transition-duration: 0.2s;
+  --transition-delay: 0.2s;
+}
+/**index buttons*/
+.index_btnAn {
+  list-style: none;
+}
+.index_btnAn .border {
+  position: absolute;
+  left: 0;
+  background: white;
+}
+.index_btnAn .border-top,
+.index_btnAn .border-bottom {
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+}
+.index_btnAn .border-left,
+.index_btnAn .border-right {
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+}
+.index_btnAn .border-top,
+.index_btnAn .border-left,
+.index_btnAn .border-right {
+  top: 0;
+}
+.index_btnAn .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+.index_btnAn .border-top {
+  transform-origin: top left;
+}
+.index_btnAn .border-left {
+  transform-origin: bottom left;
+}
+.index_btnAn .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.index_btnAn .border {
+  transition: transform var(--transition-duration) ease-in-out;
+}
+.index_btnAn a:hover .border-top,
+.index_btnAn a:hover .border-bottom {
+  transform: scaleX(1);
+}
+.index_btnAn a:hover .border-left,
+.index_btnAn a:hover .border-right {
+  transform: scaleY(1);
+}
+.index_btnAn a:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+.index_btnAn a:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+.index_btnAn a:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+/**Contact buttons**/
+.contact_btnAn {
+  list-style: none;
+  padding: 0;
+}
+.contact_btnAn .border {
+  position: absolute;
+  left: 0;
+  background: white;
+}
+.contact_btnAn .border-top,
+.contact_btnAn .border-bottom {
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+}
+.contact_btnAn .border-left,
+.contact_btnAn .border-right {
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+}
+.contact_btnAn .border-top,
+.contact_btnAn .border-left,
+.contact_btnAn .border-right {
+  top: 0;
+}
+.contact_btnAn .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+.contact_btnAn .border-top {
+  transform-origin: top left;
+}
+.contact_btnAn .border-left {
+  transform-origin: bottom left;
+}
+.contact_btnAn .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.contact_btnAn .border {
+  transition: transform var(--transition-duration) ease-in-out;
+}
+.contact_btnAn a:hover .border-top,
+.contact_btnAn a:hover .border-bottom {
+  transform: scaleX(1);
+}
+.contact_btnAn a:hover .border-left,
+.contact_btnAn a:hover .border-right {
+  transform: scaleY(1);
+}
+.contact_btnAn a:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+.contact_btnAn a:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+.contact_btnAn a:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}

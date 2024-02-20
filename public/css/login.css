@@ -1,0 +1,123 @@
+body {
+  background-color: #1f2028;
+  width: 100%;
+}
+.main_login {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+form {
+  width: 500px;
+  height: 400px;
+  border: 2px solid #e25e3e;
+  box-shadow: 0 0 40px #e25e3e;
+}
+
+label {
+  color: #e25e3e;
+  font-weight: 800;
+}
+.login_info {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 30px;
+  padding: 0 60px;
+}
+.login_info input {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.contact_a {
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 15px 0;
+  font-size: 20px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  color: white;
+
+  background-color: #e25e3e;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+.contact_a_input {
+  background-color: transparent;
+  border: none;
+  padding: 15px 35px;
+  color: white;
+}
+
+#login_error_p {
+  color: red;
+}
+
+/* Log Out */
+.out_main {
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.out_conf {
+  width: 600px;
+  height: 400px;
+  border: 2px solid #e25e3e;
+  box-shadow: 0 0 40px #e25e3e;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.out_letter {
+  color: white;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.out_btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/**MediaQuery**/
+@media (max-width: 1500px) {
+  #password {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .main_login {
+    height: 75%;
+  }
+  input[type="password"] {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 900px) {
+}
+
+@media (max-width: 500px) {
+  form {
+    width: 300px;
+  }
+  .out_conf {
+    width: 300px;
+  }
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aboutMe.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>About me</title>
+  </head>
+  <body class="about_background" onload="checkWidth()">
+    <div class="height">
+      <header class="head head_menu" id="head_menu">
+        <div class="nav_menu">
+          <a href="./" id="menu_a">
+            <img src="./images/logo_blanco.png" alt="logo" class="menu_logo"
+          /></a>
+          <nav id="menuNav" class="visible"></nav>
+          <button id="btnC" class="menu_btn hidden">
+            <img
+              src="./images/icons/close.svg"
+              alt=""
+              class="img_menu hidden"
+              id="menuImgC"
+            />
+          </button>
+          <button id="btnM" class="menu_btn hidden">
+            <img
+              src="./images/icons/menu.svg"
+              alt=""
+              id="menuImg"
+              class="hidden img_menu"
+            />
+          </button>
+        </div>
+        <div id="menuP2" class="visible menu_p2">
+          <h1 class="h1_menu name orange">Aarón Curro Solla</h1>
+          <h4 class="h3_menu">Web Developer & Programmer</h4>
+        </div>
+      </header>
+      <main class="about_main">
+        <div class="about_card">
+          <section class="about_me">
+            <!-- Slider -->
+            <!-- <div class="about_slider">
+              <ul>
+                <li>
+                  <img src="./images/me.jpg" alt="img" />
+                </li>
+                <li>
+                  <img src="./images/me2.jpg" alt="img" />
+                </li>
+                <li>
+                  <img src="./images/me3.jpg" alt="img" />
+                </li>
+                <li>
+                  <img src="./images/me4.jpg" alt="img" />
+                </li>
+              </ul>
+            </div> -->
+            <img src="./images/me.jpg" alt="img" />
+            <div class="about_me_letters">
+              <h2>Hello, my name is Aaron.</h2>
+              <p>
+                I am a last year web development student at Ies Ana Luisa
+                Benitez in Gran Canaria. I have knowledge of Frontend and
+                Backend technologies. I am passionate about computers, and have
+                been so since I was young. I have an interest in both hardware
+                and software. My goal is to become a full stack developer.
+              </p>
+              <div class="about_me_links">
+                <div class="about_me_cv">
+                  <h4>My CV:</h4>
+                  <a
+                    href="./files/Aaron_Curro-Resume.pdf"
+                    download="Aaron_Curro-Resume.pdf"
+                    class="about_resume"
+                    >Resume</a
+                  >
+                </div>
+                <div class="about_me_social">
+                  <a
+                    href="https://github.com/acurro9?tab=repositories"
+                    target="_blank"
+                  >
+                    <img src="./images/icons/github.svg" alt="" />
+                  </a>
+                  <a
+                    href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
+                    target="_blank"
+                  >
+                    <img src="./images/icons/linkedin.svg" alt="" />
+                  </a>
+                  <a
+                    href="mailto:asbarxas.aaroncurro@gmail.com"
+                    target="_blank"
+                  >
+                    <img src="./images/icons/mail.svg" alt="" />
+                  </a>
+                  <a href="https://twitter.com/Aaroncurro" target="_blank">
+                    <img
+                      src="./images/icons/twitter.png"
+                      alt=""
+                      class="twitter"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="about_skills">
+            <div class="about_skills_title">
+              <h2 class="about_skills_h1 orange">Skills & Tools:</h2>
+              <p class="about_skills_p">
+                The skills, tools and technologies I use to bring products to
+                life:
+              </p>
+            </div>
+            <!-- Skill for grid template -->
+            <div class="about_skills_logos">
+              <div class="about_skills_svg">
+                <img src="./images/icons/html.svg" alt="" />
+                <p class="about_skills_logos_p">HTML</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/css.svg" alt="" />
+                <p class="about_skills_logos_p">CSS</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/js.svg" alt="" />
+                <p class="about_skills_logos_p">JavaScript</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/jquery.svg" alt="" />
+                <p class="about_skills_logos_p">JQuery</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/java.svg" alt="" />
+                <p class="about_skills_logos_p">Java</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/php.svg" alt="" />
+                <p class="about_skills_logos_p">PHP</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/git.svg" alt="" />
+                <p class="about_skills_logos_p">Git</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/githubM.svg" alt="" />
+                <p class="about_skills_logos_p">Github</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/responsive.svg" alt="" />
+                <p class="about_skills_logos_p">Responsive Websites</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/terminal.svg" alt="" />
+                <p class="about_skills_logos_p">Command Line</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/mysql.svg" alt="" />
+                <p class="about_skills_logos_p">MySQL</p>
+              </div>
+              <div class="about_skills_svg">
+                <img src="./images/icons/postgresSQL.svg" alt="" />
+                <p class="about_skills_logos_p">PostgresSQL</p>
+              </div>
+            </div>
+            <!-- Table with the skills -->
+            <table class="about_table">
+              <tr>
+                <td colspan="6" class="about_skills_td">
+                  <p class="about_skills_p2">
+                    The skills, tools and technologies I use to bring products
+                    to life:
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./images/icons/html.svg" alt="" />
+                </td>
+                <td><img src="./images/icons/css.svg" alt="" /></td>
+                <td><img src="./images/icons/js.svg" alt="" /></td>
+                <td>
+                  <img src="./images/icons/jquery.svg" alt="" />
+                </td>
+                <td>
+                  <img src="./images/icons/java.svg" alt="" />
+                </td>
+                <td><img src="./images/icons/php.svg" alt="" /></td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JavaScript</td>
+                <td>JQuery</td>
+                <td>Java</td>
+                <td>PHP</td>
+              </tr>
+            </table>
+            <table class="about_table about_table_second">
+              <tr>
+                <td>
+                  <img src="./images/icons/responsive.svg" alt="" />
+                </td>
+                <td><img src="./images/icons/git.svg" alt="" /></td>
+                <td>
+                  <img src="./images/icons/githubM.svg" alt="" />
+                </td>
+                <td>
+                  <img src="./images/icons/terminal.svg" alt="" />
+                </td>
+                <td>
+                  <img src="./images/icons/mysql.svg" alt="" />
+                </td>
+                <td>
+                  <img src="./images/icons/postgresSQL.svg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">Responsive Web Design</td>
+                <td>Git</td>
+                <td>Github</td>
+                <td>Command Line</td>
+                <td>MYSQL</td>
+                <td>PostgresSql</td>
+              </tr>
+            </table>
+          </section>
+          <section class="about_projects">
+            <h2 class="about_projects_h1 orange">Projects:</h2>
+            <div class="about_projects_img">
+              <div class="about_projects_pro">
+                <img src="./images/projects/drogo.png" alt="" />
+                <a
+                  href="https://github.com/acurro9/Drogo_PHP"
+                  target="_blank"
+                  class="about_projects_link"
+                >
+                  <img src="./images/icons/github.svg" alt="" />
+                  <p>Drogo</p>
+                </a>
+              </div>
+              <div class="about_projects_pro">
+                <img src="./images/projects/bienesRaices.png" alt="" />
+                <a
+                  href="https://github.com/acurro9/bienesRaices"
+                  target="_blank"
+                  class="about_projects_link"
+                >
+                  <img src="./images/icons/github.svg" alt="" />
+                  <p>Bienes Raices</p>
+                </a>
+              </div>
+              <div class="about_projects_pro">
+                <img src="./images/projects/freelancer.png" alt="" />
+                <a
+                  href="https://github.com/acurro9/firstpage"
+                  target="_blank"
+                  class="about_projects_link"
+                >
+                  <img src="./images/icons/github.svg" alt="" />
+                  <p>Freelancer</p>
+                </a>
+              </div>
+            </div>
+            <div class="about_projects_see">
+              <a href="./projects.html">See more...</a>
+            </div>
+          </section>
+          <section class="about_playlists">
+            <h2 class="about_playlists_h1 orange">Playlists:</h2>
+            <div class="about_playlist_embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/0ucdLWYhdAc?si=DM8manlv851nHoGA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/p0OH206z9Wg?si=BW8faUqa0OTQzWiD"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <section class="about_widget">
+            <h2 class="orange">Where to find me?</h2>
+            <div class="about_widget_map">
+              <div class="about_map">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                  <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                  <a href="https://1map.com/es/map-embed">1 Map</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="hidden" id="about_location">
+            <h2 class="orange">Where you are?</h2>
+            <div id="map" class="map_mobile"></div>
+          </section>
+
+          <section class="about_contact">
+            <h4 class="orange">Interested in collaborating with me?</h4>
+            <p>
+              I'm always open to discussing product development work or
+              partnership opportunities.
+            </p>
+            <a class="about_contact_link" href="/contact">
+              <img
+                class="about_contact_img"
+                src="./images/icons/chat.svg"
+                alt=""
+              />Start a conversation</a
+            >
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="leftFooter">
+          <div class="links">
+            <a
+              href="https://github.com/acurro9?tab=repositories"
+              target="_blank"
+            >
+              <img src="./images/icons/github.svg" alt="" />
+            </a>
+            <a
+              href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
+              target="_blank"
+            >
+              <img src="./images/icons/linkedin.svg" alt="" />
+            </a>
+            <a href="mailto:asbarxas.aaroncurro@gmail.com" target="_blank">
+              <img src="./images/icons/mail.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/Aaroncurro" target="_blank">
+              <img src="./images/icons/twitter.png" alt="" class="twitter" />
+            </a>
+          </div>
+          <div class="copy">
+            <img src="./images/icons/copyrigth.svg" alt="" />
+            <p>All rigths reserved</p>
+          </div>
+        </div>
+
+        <nav id="footer_menu">
+          <ul class="menu">
+            <li><a href="./">Index</a></li>
+            <li><a href="./aboutMe">About me</a></li>
+            <li><a href="./projects">Projects</a></li>
+            <li><a href="./contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/navegation.js"></script>
+    <script src="./js/geolocation.js"></script>
+  </body>
+</html>

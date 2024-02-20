@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
+    <script src="./js/jQuery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Admin</title>
+  </head>
+  <body onload="checkWidth()">
+    <div class="height">
+      <header class="head head_menu" id="head_menu">
+        <div class="nav_menu">
+          <a href="./" id="menu_a">
+            <img src="./images/logo_blanco.png" alt="logo" class="menu_logo"
+          /></a>
+          <nav id="menuNav" class="visible"></nav>
+          <button id="btnC" class="menu_btn hidden">
+            <img
+              src="./images/icons/close.svg"
+              alt=""
+              class="img_menu hidden"
+              id="menuImgC"
+            />
+          </button>
+          <button id="btnM" class="menu_btn hidden">
+            <img
+              src="./images/icons/menu.svg"
+              alt=""
+              id="menuImg"
+              class="hidden img_menu"
+            />
+          </button>
+        </div>
+        <div id="menuP2" class="visible menu_p2">
+          <h1 class="h1_menu name orange">Admin area</h1>
+        </div>
+      </header>
+
+      <main>
+        <div class="tables">
+          <!-- Tabla de usuarios -->
+          <table class="table_one">
+            <h2>Users</h2>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Manage</th>
+              </tr>
+            </thead>
+            <tbody id="user_tbody"></tbody>
+          </table>
+
+          <!-- Tabla de mensajes -->
+          <table>
+            <h2>Messages</h2>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Manage</th>
+              </tr>
+            </thead>
+            <tbody id="mssg_tbody"></tbody>
+          </table>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="leftFooter">
+          <div class="links">
+            <a
+              href="https://github.com/acurro9?tab=repositories"
+              target="_blank"
+            >
+              <img src="./images/icons/github.svg" alt="" />
+            </a>
+            <a
+              href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
+              target="_blank"
+            >
+              <img src="./images/icons/linkedin.svg" alt="" />
+            </a>
+            <a href="mailto:asbarxas.aaroncurro@gmail.com" target="_blank">
+              <img src="./images/icons/mail.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/Aaroncurro" target="_blank">
+              <img src="./images/icons/twitter.png" alt="" class="twitter" />
+            </a>
+          </div>
+          <div class="copy">
+            <img src="./images/icons/copyrigth.svg" alt="" />
+            <p>All rigths reserved</p>
+          </div>
+        </div>
+
+        <nav id="footer_menu">
+          <ul class="menu">
+            <li><a href="./">Index</a></li>
+            <li><a href="./aboutMe">About me</a></li>
+            <li><a href="./projects">Projects</a></li>
+            <li><a href="./contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/navegation.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

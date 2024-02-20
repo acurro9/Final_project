@@ -1,0 +1,120 @@
+/**Index**/
+.index_background {
+  background: url(../images/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -500px;
+}
+.index_main {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+.index_blur {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  padding-bottom: 5rem;
+
+  width: 100%;
+}
+.index_logo {
+  max-width: 200px;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  &:hover {
+    animation: none;
+    -webkit-animation: none;
+    cursor: pointer;
+  }
+}
+.index_logo_spin {
+  animation-name: spinningY;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+.index_h1 {
+  color: white;
+  font-size: 50px;
+}
+.index_type {
+  color: white;
+  font-size: 50px;
+  max-width: 800px;
+}
+
+.index_link {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  &:hover .index_p1 {
+    text-decoration: underline;
+  }
+}
+
+/**MediaQuery**/
+@media (max-width: 1500px) {
+  .index_background {
+    background-position-y: -200px;
+  }
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 900px) {
+  .index_background {
+    background-position-y: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .index_background {
+    background-position-y: 0;
+    background-position-x: -150px;
+  }
+}
+
+/**Keyframes*/
+/*Rotate Logo on index*/
+@keyframes spinningY {
+  from {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+  }
+}
+
+/*Confetti*/
+@keyframes bang {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

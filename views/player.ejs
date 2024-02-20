@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/player.css" />
+    <!-- <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script> -->
+    <script src="./js/jQuery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Player</title>
+  </head>
+  <body onload="checkWidth()">
+    <div class="height">
+      <header class="head head_menu" id="head_menu">
+        <div class="nav_menu">
+          <a href="./">
+            <img src="./images/logo_blanco.png" alt="logo" class="menu_logo"
+          /></a>
+          <nav id="menuNav" class="visible"></nav>
+          <button id="btnC" class="menu_btn hidden">
+            <img
+              src="./images/icons/close.svg"
+              alt=""
+              class="img_menu hidden"
+              id="menuImgC"
+            />
+          </button>
+          <button id="btnM" class="menu_btn hidden">
+            <img
+              src="./images/icons/menu.svg"
+              alt=""
+              id="menuImg"
+              class="hidden img_menu"
+            />
+          </button>
+        </div>
+        <div id="menuP2" class="visible menu_p2">
+          <h1 class="h1_menu name orange">Aarón Curro Solla</h1>
+          <h4 class="h3_menu">Web Developer & Programmer</h4>
+        </div>
+      </header>
+
+      <main>
+        <section id="list">
+          <!-- Reproductor -->
+          <div id="player">
+            <button id="playBtn">
+              <img
+                src="./images/player/player.png"
+                alt=""
+                id="background_player"
+              />
+            </button>
+            <video id="player_video" class="hidden" src="">
+              <!-- Para que soporte cualquier codec -->
+              <!-- <source src="" type="video/mp4" id="mp4" />
+              <source src="" type="video/webm" id="webm" />
+              <source src="" type="video/ogg" id="ogg" /> -->
+            </video>
+            <img
+              src="./images/player/music.png"
+              id="player_music"
+              class="hidden"
+            />
+            <div id="controller_background">
+              <!-- controles -->
+              <div id="controlls">
+                <!-- Barrra de progreso del video -->
+                <input
+                  type="range"
+                  id="progressVideo"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+                <div id="controlls_user">
+                  <!-- Volumen -->
+                  <section id="volume">
+                    <button id="volumeBtn">
+                      <img
+                        src="./images/player/volumen.png"
+                        alt=""
+                        id="volumeBtn_img"
+                      />
+                    </button>
+                    <input type="range" id="volumeInput" min="0" max="100" />
+                  </section>
+                  <!-- Controles del tiempo del video -->
+                  <section id="back_video">
+                    <button id="back_video_btn">
+                      <img src="./images/player/anterior.png" alt="" />
+                    </button>
+                  </section>
+                  <section id="player_controllers">
+                    <button id="beggin">
+                      <img src="./images/player/inicio.png" alt="" />
+                    </button>
+                    <button id="back">
+                      <img src="./images/player/rebobinar.png" alt="" />
+                    </button>
+                    <button id="stop">
+                      <img src="./images/player/stop.svg" alt="" />
+                    </button>
+                    <button id="forward">
+                      <img src="./images/player/avanzar.png" alt="" />
+                    </button>
+                    <button id="end">
+                      <img src="./images/player/fin.png" alt="" />
+                    </button>
+                  </section>
+                  <section id="next_video">
+                    <button id="next">
+                      <img src="./images/player/siguiente.png" alt="" />
+                    </button>
+                  </section>
+                  <!-- Boton de pantalla completa -->
+                  <section id="video_screen">
+                    <button id="screen_width">
+                      <img
+                        src="./images/player/aumentar.svg"
+                        alt=""
+                        id="screen_width_img"
+                      />
+                    </button>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- <input
+              type="range"
+              id="progressVideo2"
+              min="0"
+              max="100"
+              value="0"
+            /> -->
+          </div>
+          <!-- Listas de reproducción -->
+          <section id="list_multimedia">
+            <!-- Videos -->
+            <div id="list_video">
+              <button id="first_video">
+                <img src="./images/covers/devs.png" alt="" />
+              </button>
+              <button id="second_video">
+                <img src="./images/covers/mrRobot.png" alt="" />
+              </button>
+              <button id="third_video">
+                <img src="./images/covers/blackMirror.png" alt="" />
+              </button>
+              <button id="four_video">
+                <img src="./images/covers/upload.png" alt="" />
+              </button>
+            </div>
+            <!-- Musica -->
+            <div id="list_music">
+              <button id="first_song">
+                <img src="./images/covers/music1.png" alt="" />
+              </button>
+              <button id="second_song">
+                <img src="./images/covers/music2.png" alt="" />
+              </button>
+              <button id="third_song">
+                <img src="./images/covers/music3.png" alt="" />
+              </button>
+              <button id="four_song">
+                <img src="./images/covers/music4.png" alt="" />
+              </button>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="leftFooter">
+          <div class="links">
+            <a
+              href="https://github.com/acurro9?tab=repositories"
+              target="_blank"
+            >
+              <img src="./images/icons/github.svg" alt="" />
+            </a>
+            <a
+              href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
+              target="_blank"
+            >
+              <img src="./images/icons/linkedin.svg" alt="" />
+            </a>
+            <a href="mailto:asbarxas.aaroncurro@gmail.com" target="_blank">
+              <img src="./images/icons/mail.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/Aaroncurro" target="_blank">
+              <img src="./images/icons/twitter.png" alt="" class="twitter" />
+            </a>
+          </div>
+          <div class="copy">
+            <img src="./images/icons/copyrigth.svg" alt="" />
+            <p>All rigths reserved</p>
+          </div>
+        </div>
+        <nav id="footer_menu">
+          <ul class="menu">
+            <li><a href="./">Index</a></li>
+            <li><a href="./aboutMe">About me</a></li>
+            <li><a href="./projects">Projects</a></li>
+            <li><a href="./contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./js/display.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/navegation.js"></script>
+    <script src="./js/player.js"></script>
+  </body>
+</html>

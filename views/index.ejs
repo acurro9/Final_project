@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cookies.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
+
+    <script src="/js/jQuery.js"></script>
+
+    <title>¡Welcome!</title>
+  </head>
+  <body class="index_background scroll">
+    <div class="height">
+      <main class="index_main">
+        <div class="index_blur" id="scroll">
+          <img
+            src="./images/logo_blanco.png"
+            alt="logo"
+            class="index_logo"
+            id="index_logo"
+            onclick=" btn_animation();"
+          />
+          <div id="index_h1">
+            <h1 class="index_h1">
+              Hi, I'm Aaron, a web developer and programmer.
+            </h1>
+          </div>
+          <span id="index_write" class="index_type"></span>
+          <a href="./aboutMe" class="index_link">
+            <p class="index_p1">Learn more about what I do</p>
+            <p>V</p>
+          </a>
+        </div>
+      </div>
+      </main>
+      <div class="aviso-cookies" id="aviso-cookies">
+        <img src="./images/icons/cookie.svg" alt="cookie" class="galleta">
+        <h3 class=""titulo>Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+        <button class="boton" id="btn-pagar-cookies">Paga 5€ y no guardamos las cookies</button>
+        <a href="./cookiesNotice" target="_blank" rel="noopener noreferrer" class="enlace">Aviso de cookies</a>
+      </div>
+      <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/cookie.js"></script>
+    <script src="./js/indexAnimations.js"></script>
+    <script src="./js/type.js"></script>
+    <script src="./js/indexedDB.js"></script>
+  </body>
+</html>
