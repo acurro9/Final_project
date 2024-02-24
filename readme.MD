@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este es el proyecto final de la asignatura de Diseño de Interfaces Web y de Desarrollo Web en entorno de cliente. Esta programado con HTML, CSS, Javascript, Jquery. Además se utiliza Node.js con Express.js para gestionar los endpoints.
+Este es el proyecto final de la asignatura de Diseño de Interfaces Web y de Desarrollo Web en entorno de cliente. Esta programado con HTML, CSS, Javascript y Jquery. Además se utiliza Node.js con Express.js para gestionar los endpoints.
 
 ## Iniciar el proyecto
 
