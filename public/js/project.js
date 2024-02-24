@@ -41,7 +41,7 @@ const drogo = new Project(
   "Drogo",
   "HTML, CSS, PHP y JS",
   "drogo.png",
-  "https://github.com/acurro9/Drogo_PHP"
+  "https://github.com/acurro9/DrogoMVC"
 );
 const bienesRaices = new Project(
   "Bienes Raices",
@@ -59,69 +59,74 @@ const Fcolumns = new Project(
   "Four Columns",
   "HTML y CSS",
   "4tarjetas.png",
-  "https://github.com/acurro9/Four-Columns"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/Four-Columns-main/index.html"
 );
 const curvedSection = new Project(
   "Curved Section",
   "HTML y CSS",
   "curvedSection.png",
-  "https://github.com/acurro9/curved-sections"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/curved-sections-main/index.html"
 );
 const socialProof = new Project(
   "Social Proof",
   "HTML y CSS",
   "social_proof.png",
-  "https://github.com/acurro9/social-proof-section-master"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/social-proof-section-master-main/index.html"
 );
 const profileCard = new Project(
   "Profile Card",
   "HTML y CSS",
   "profile.png",
-  "https://github.com/acurro9/profile-card-component"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/profile-card-component-main/index.html"
 );
 const TColumns = new Project(
   "Three Columns",
   "HTML y CSS",
   "3columns.png",
-  "https://github.com/acurro9/3-columns-preview-card-component"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/3-columns-preview-card-component-main/index.html"
 );
 const orderSumary = new Project(
   "Order Sumary",
   "HTML y CSS",
   "order.png",
-  "https://github.com/acurro9/order-summary-component"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/order-summary-component-main/index.html"
 );
 const previewCard = new Project(
   "Product Preview",
   "HTML y CSS",
   "product.png",
-  "https://github.com/acurro9/product-preview-card-component"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/product-preview-card-component-main/index.html"
 );
 const NFT = new Project(
   "NFT",
   "HTML y CSS",
   "nft.png",
-  "https://github.com/acurro9/NFT-card-preview"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/NFT-card-preview-main/index.html"
 );
 const simplePrice = new Project(
   "Price Grid",
   "HTML y CSS",
   "simplegrid.png",
-  "https://github.com/acurro9/simple-price-grid"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/simple-price-grid-main/index.html"
 );
 const statsPreview = new Project(
   "Stats Preview",
   "HTML y CSS",
   "business.png",
-  "https://github.com/acurro9/stats-preview-card-component-main"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/stats-preview-card-component-main-main/index.html"
 );
 const freelancer = new Project(
   "Freelancer",
   "HTML y CSS",
   "freelancer.png",
-  "https://github.com/acurro9/firstpage"
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/firstpage-main/index.html"
 );
-const homePage = new Project("Home Page", "HTML y CSS", "homePage.png", "#");
+const html_editor = new Project(
+  "HTML Editor",
+  "HTML, CSS y JS",
+  "html_editor.png",
+  "https://acurro9.github.io/FrontEnd_Mentor_Projects/Proyectos/HTML_Editor-master/index.html"
+);
 //Se guardan los proyectos en un array multidimensional
 const projects = [
   [drogo, NFT, TColumns, Fcolumns, profileCard],
@@ -133,7 +138,7 @@ const projects = [
     orderSumary,
     curvedSection,
   ],
-  [simplePrice, tresRaya, homePage, previewCard],
+  [simplePrice, tresRaya, previewCard, html_editor],
 ];
 //Se insertan los proyectos en el html
 function createProjects(arrayP) {
