@@ -1,5 +1,9 @@
 # Proyecto DEW y DOR
 
+## Descripción
+
+Este es el proyecto final de la asignatura de Diseño de Interfaces Web y de Desarrollo Web en entorno de cliente. Esta programado con HTML, CSS, Javascript, Jquery. Además se utiliza Node.js con Express.js para gestionar los endpoints.
+
 ## Iniciar el proyecto
 
 - Al abrir por primera vez el proyecto hay que abrir una nueva terminal y escribir el comando: npm intall
@@ -17,6 +21,18 @@
 - Tablet: 768px
 - Portatil: 1440px
 - Ordenador: 1920px
+
+## IndexedDB
+
+Para el login del proyecto se utiliza IndexedDB, teniendo dos tipos de usuarios, el administrador o el usuario normal. Para loggearse son datos distintos.
+
+### Admin
+- Nombre de usuario: Aaron
+- Contraseña: 1234
+
+### Usuario
+- Nombre de usuario: admin
+- Contraseña: 1234
 
 ## Autor
 
