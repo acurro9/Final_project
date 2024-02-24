@@ -6,9 +6,13 @@
   padding-left: 0;
   padding-right: 0;
 }
+.projects_menu_p2 {
+  margin-top: -70px;
+}
+
 .projects_project {
   max-width: 80%;
-  margin: 26vh auto 0 auto;
+  margin: 14vh auto 0 auto;
   padding: 3.5rem;
   border-radius: 15px;
   border: 2px solid #e25e3e;
